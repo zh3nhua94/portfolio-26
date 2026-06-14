@@ -1,0 +1,31 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Professional portfolio site for Zen Wong",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "personal-website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^16.2.6",
+    "pdf-parse": "^2.4.5",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-vertical-timeline-component": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.0",
+    "@types/react": "19.2.14",
+    "typescript": "6.0.3"
+  }
+}
