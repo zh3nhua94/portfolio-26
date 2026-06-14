@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://zenwong.vercel.app/react/food/food.jpg",
+        url: "/react/food/food.jpg",
         width: 1200,
         height: 630,
         alt: "Zen Wong portfolio preview",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Zen Wong | Senior Frontend Engineer",
     description:
       "Explore Zen Wong's React portfolio projects and senior frontend engineering work.",
-    images: ["https://zenwong.vercel.app/react/food/food.jpg"],
+    images: ["/react/food/food.jpg"],
   },
 };
 

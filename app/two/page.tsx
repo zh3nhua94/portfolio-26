@@ -6,8 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "./two.css";
 
-const LEGACY_ASSET_BASE = "https://zenwong.vercel.app";
-
 type Project = {
   title: string;
   categories: string[];
@@ -280,28 +278,28 @@ const projects: Project[] = [
 
 function getProjectCardThumbnail(project: Project) {
   if (project.imagePath) {
-    return `${LEGACY_ASSET_BASE}${project.imagePath}`;
+    return project.imagePath;
   }
   if (project.siteImagePath) {
-    return `${LEGACY_ASSET_BASE}${project.siteImagePath}`;
+    return project.siteImagePath;
   }
   if (project.youtubeId) {
     return `https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`;
   }
-  return `${LEGACY_ASSET_BASE}/portfolio/technigroup.jpg`;
+  return "/portfolio/technigroup.jpg";
 }
 
 function getProjectPopupImage(project: Project) {
   if (project.siteImagePath) {
-    return `${LEGACY_ASSET_BASE}${project.siteImagePath}`;
+    return project.siteImagePath;
   }
   if (project.imagePath) {
-    return `${LEGACY_ASSET_BASE}${project.imagePath}`;
+    return project.imagePath;
   }
   if (project.youtubeId) {
     return `https://img.youtube.com/vi/${project.youtubeId}/hqdefault.jpg`;
   }
-  return `${LEGACY_ASSET_BASE}/portfolio/technigroup.jpg`;
+  return "/portfolio/technigroup.jpg";
 }
 
 function getProjectActions(project: Project) {
